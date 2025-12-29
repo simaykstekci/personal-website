@@ -1,0 +1,67 @@
+.skills-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.skills-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  margin-bottom: 60px;
+  text-align: center;
+  /* Büyük harf zorunluluğunu kaldırıyoruz */
+  text-transform: none; 
+  color: white;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 40px 20px;
+  justify-items: center;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-box {
+  width: 110px;
+  height: 110px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+  overflow: hidden; /* Taşmaları önler */
+}
+
+.icon-box img {
+  width: 60%; /* İkonun kutu içindeki büyüklüğü */
+  height: 60%;
+  object-fit: contain;
+}
+
+.skill-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  /* İstersen buradaki büyük harfi de kapatabilirsin */
+  text-transform: none; 
+}
+
+/* Mobil uyum */
+@media (max-width: 900px) {
+  .skills-grid { grid-template-columns: repeat(3, 1fr); }
+  .icon-box { width: 90px; height: 90px; }
+}

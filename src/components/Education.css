@@ -1,0 +1,81 @@
+.education-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: left; /* Eğitim bilgileri genelde soldan hizalı daha iyi durur */
+}
+
+.education-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.education-item {
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid rgba(255, 255, 255, 0.1); /* Sol tarafta şık bir çizgi */
+  transition: all 0.3s ease;
+}
+
+.education-item:hover {
+  border-left: 2px solid #ffffff; /* Üzerine gelince parlayan çizgi */
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.edu-header h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.edu-date {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.edu-university {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 4px;
+}
+
+.edu-faculty {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.edu-badge {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .education-title { font-size: 2.5rem; }
+  .edu-header h3 { font-size: 1.4rem; }
+  .edu-header { flex-direction: column; }
+}
