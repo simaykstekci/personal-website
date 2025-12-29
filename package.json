@@ -28,4 +28,11 @@
     "tailwindcss": "^4.1.18",
     "vite": "^7.2.4"
   }
+"homepage": "https://simaykstekci.github.io/personal-website",
+"scripts": {
+  "build": "vite build",
+  "deploy": "gh-pages -d dist"
+}
+
+
 }
